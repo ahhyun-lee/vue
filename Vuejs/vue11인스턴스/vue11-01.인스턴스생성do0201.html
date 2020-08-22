@@ -32,15 +32,31 @@
     </xmp>
     <hr>
 
-    <div>
+    <div id = "app">
         {{ message }}
     </div>
 
-    <div>
+    <div id = "app2">
         {{ message }}
     </div>
 </body>
 
 </html>
-
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"> </script>
+<script>
+    var vm1 = new Vue (
+        {   el : "#app",
+            data : {
+                message:"hello"
+            }
+        }
+    );
+    var vm2 = new Vue (
+        {   el : "#app2",
+            data : {
+                message:"vue.js"
+            }
+        }
+    );
+</script>
 <!-- vue 스크립트 플러그인 임포트   -->

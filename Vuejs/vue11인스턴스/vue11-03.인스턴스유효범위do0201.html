@@ -47,5 +47,20 @@
 </body>
 
 </html>
-
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"> </script>
+<script>
+    var data  = {
+        message: "hello ,vue.js"
+    }
+    var vm1 = new Vue (
+        {   el : "#app",
+            data : data
+        }
+    );
+    var vm2 = new Vue (
+        {   el : "#app2",
+            data : data
+        }
+    );
+</script>
 <!-- vue 스크립트 플러그인 임포트 -->
